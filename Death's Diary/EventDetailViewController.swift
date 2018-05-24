@@ -23,9 +23,11 @@ class EventDetailViewController: UIViewController {
 
         eventTableView.dataSource = self
         eventTableView.delegate = self
+        eventDescription.delegate = self
 
         eventTitle.text = chosenEvent?.eventTitle
         eventDescription.text = chosenEvent?.eventText
+        eventDescription.sizeToFit()
         
         eventTableView?.register(EventTableHeadingCell.nib, forCellReuseIdentifier: EventTableHeadingCell.identifier)
         eventTableView?.register(EventTableResultCell.nib, forCellReuseIdentifier: EventTableResultCell.identifier)
@@ -34,6 +36,8 @@ class EventDetailViewController: UIViewController {
         eventTableView.rowHeight = UITableViewAutomaticDimension
         eventTableView.estimatedRowHeight = 100
         eventTableView.separatorStyle = .none
+        
+        adjustUITextViewHeight(arg: eventDescription) // See if we can dynamically size
         eventTableView.reloadData()
     }
 
@@ -43,15 +47,14 @@ class EventDetailViewController: UIViewController {
     }
     
 }
-extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate {
+extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-//        if chosenEvent!.eventResults.count < 3 {
-//            return 2
-//        } else {
-//            return chosenEvent!.eventResults.count - 1
-//        }
-        return 2
+        if chosenEvent!.eventResults.count == 0 {
+            return 0
+        } else {
+            return 2
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
@@ -86,4 +89,11 @@ extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate 
         }
     }
     
+    // For textView
+    func adjustUITextViewHeight(arg : UITextView)
+    {
+        arg.translatesAutoresizingMaskIntoConstraints = true
+        arg.sizeToFit()
+        arg.isScrollEnabled = false
+    }
 }

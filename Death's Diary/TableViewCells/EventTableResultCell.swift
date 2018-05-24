@@ -19,7 +19,7 @@ class EventTableResultCell: UITableViewCell {
         didSet {
             eventResultDescription.sizeToFit()
             eventDieResult.text = event?.eventDieResult
-            eventResultDescription.text = event?.eventResultDescription
+            eventResultDescription.attributedText = event?.eventResultDescription
         }
     }
     static var nib:UINib {

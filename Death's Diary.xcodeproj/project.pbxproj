@@ -93,9 +93,7 @@
 				FBB4D92920A23C7F00CAA684 /* Assets.xcassets */,
 				FBB4D92B20A23C7F00CAA684 /* LaunchScreen.storyboard */,
 				FBB4D92E20A23C7F00CAA684 /* Info.plist */,
-				FBB4D93A20A3A5BE00CAA684 /* HuntEvent.swift */,
-				FBB4D93C20A3ABDB00CAA684 /* DataModel.swift */,
-				FBDFE60B20B4B99B00CAA684 /* EventResult.swift */,
+				FBDFE61920B7592700CAA684 /* DataModel */,
 			);
 			path = "Death's Diary";
 			sourceTree = "<group>";
@@ -118,6 +116,16 @@
 				FBDFE61820B6016200CAA684 /* Amplitude-Regular_3557.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FBDFE61920B7592700CAA684 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4D93A20A3A5BE00CAA684 /* HuntEvent.swift */,
+				FBB4D93C20A3ABDB00CAA684 /* DataModel.swift */,
+				FBDFE60B20B4B99B00CAA684 /* EventResult.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
