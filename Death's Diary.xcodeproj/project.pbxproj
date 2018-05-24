@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FBB4D92320A23C7E00CAA684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */; };
-		FBB4D92520A23C7E00CAA684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D92420A23C7E00CAA684 /* ViewController.swift */; };
 		FBB4D92820A23C7E00CAA684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4D92620A23C7E00CAA684 /* Main.storyboard */; };
 		FBB4D92A20A23C7F00CAA684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB4D92920A23C7F00CAA684 /* Assets.xcassets */; };
 		FBB4D92D20A23C7F00CAA684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4D92B20A23C7F00CAA684 /* LaunchScreen.storyboard */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		FBB4D91F20A23C7E00CAA684 /* Death's Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Death's Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBB4D92420A23C7E00CAA684 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBB4D92720A23C7E00CAA684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBB4D92920A23C7F00CAA684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB4D92C20A23C7F00CAA684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +46,8 @@
 		FBDFE61020B4C12800CAA684 /* EventTableResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableResultCell.xib; sourceTree = "<group>"; };
 		FBDFE61220B5F89700CAA684 /* Amplitude-Regular_3557.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amplitude-Regular_3557.ttf"; path = "../../../Downloads/Amplitude-Regular_3557.ttf"; sourceTree = "<group>"; };
 		FBDFE61320B5F89700CAA684 /* Amplitude-Bold_3532.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amplitude-Bold_3532.ttf"; path = "../../../Downloads/Amplitude-Bold_3532.ttf"; sourceTree = "<group>"; };
+		FBDFE61720B6016200CAA684 /* Amplitude-Bold_3532.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amplitude-Bold_3532.ttf"; sourceTree = "<group>"; };
+		FBDFE61820B6016200CAA684 /* Amplitude-Regular_3557.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amplitude-Regular_3557.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +80,11 @@
 		FBB4D92120A23C7E00CAA684 /* Death's Diary */ = {
 			isa = PBXGroup;
 			children = (
+				FBDFE61620B6016100CAA684 /* Fonts */,
 				FBDFE61320B5F89700CAA684 /* Amplitude-Bold_3532.ttf */,
 				FBDFE61220B5F89700CAA684 /* Amplitude-Regular_3557.ttf */,
 				FBDFE60D20B4C09B00CAA684 /* TableViewCells */,
 				FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */,
-				FBB4D92420A23C7E00CAA684 /* ViewController.swift */,
 				FBB4D92620A23C7E00CAA684 /* Main.storyboard */,
 				FBB4D93820A255A400CAA684 /* tables.swift */,
 				FBB4D93420A240E400CAA684 /* MasterViewController.swift */,
@@ -109,6 +109,15 @@
 				FBDFE61020B4C12800CAA684 /* EventTableResultCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FBDFE61620B6016100CAA684 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FBDFE61720B6016200CAA684 /* Amplitude-Bold_3532.ttf */,
+				FBDFE61820B6016200CAA684 /* Amplitude-Regular_3557.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +197,6 @@
 			files = (
 				FBB4D93D20A3ABDB00CAA684 /* DataModel.swift in Sources */,
 				FBDFE60820B4ABC300CAA684 /* EventTableHeadingCell.swift in Sources */,
-				FBB4D92520A23C7E00CAA684 /* ViewController.swift in Sources */,
 				FBDFE60C20B4B99B00CAA684 /* EventResult.swift in Sources */,
 				FBB4D93920A255A400CAA684 /* tables.swift in Sources */,
 				FBB4D93520A240E400CAA684 /* MasterViewController.swift in Sources */,

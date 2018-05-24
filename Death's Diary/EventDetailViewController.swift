@@ -14,7 +14,7 @@ class EventDetailViewController: UIViewController {
     
     @IBOutlet weak var eventTitle: UILabel!
     
-    @IBOutlet weak var eventDescription: UILabel!
+    @IBOutlet weak var eventDescription: UITextView!
     
     var chosenEvent: HuntEvent?
     
@@ -46,12 +46,18 @@ class EventDetailViewController: UIViewController {
 extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return chosenEvent!.eventResults.count - 1
+//        if chosenEvent!.eventResults.count < 3 {
+//            return 2
+//        } else {
+//            return chosenEvent!.eventResults.count - 1
+//        }
+        return 2
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
         } else {
+            print(chosenEvent!.eventResults.count)
             return chosenEvent!.eventResults.count
         }
     }
@@ -64,6 +70,7 @@ extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate 
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: EventTableResultCell.identifier, for: indexPath) as! EventTableResultCell
             cell.event = event.eventResults[indexPath.row]
+            print("Got here?")
             return cell
         } else {
             let cell = UITableViewCell(frame: .zero)

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amplitude-Regular_3557.ttf">
+            <string>Amplitude-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EventTableResultCell" customModule="Death_s_Diary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyG-OP-zdj">
+                    <rect key="frame" x="15" y="6" width="60" height="18.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Vj6-ly-bso"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Amplitude-Regular" family="Amplitude-Regular" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nru-jM-aIw">
+                    <rect key="frame" x="75" y="6" width="294" height="265"/>
+                    <fontDescription key="fontDescription" name="Amplitude-Regular" family="Amplitude-Regular" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6F-TB-APK">
+                    <rect key="frame" x="0.0" y="26" width="15" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="Be4-cg-Okl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="EventTableResultCell"/>
+            <constraints>
+                <constraint firstItem="OyG-OP-zdj" firstAttribute="leading" secondItem="F6F-TB-APK" secondAttribute="trailing" id="A2e-o7-sEb"/>
+                <constraint firstItem="F6F-TB-APK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="R13-DG-8fT"/>
+                <constraint firstItem="OyG-OP-zdj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="SLg-gi-8Cb"/>
+                <constraint firstItem="nru-jM-aIw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="Sbp-ME-jLV"/>
+                <constraint firstItem="F6F-TB-APK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="26" id="TGx-pZ-DAL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nru-jM-aIw" secondAttribute="trailing" constant="16" id="Yvw-yS-87h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nru-jM-aIw" secondAttribute="bottom" constant="6" id="Zvo-14-68h"/>
+                <constraint firstItem="nru-jM-aIw" firstAttribute="leading" secondItem="OyG-OP-zdj" secondAttribute="trailing" id="ueQ-oR-imY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="eventDieResult" destination="OyG-OP-zdj" id="lw6-CO-0q5"/>
+                <outlet property="eventResultDescription" destination="nru-jM-aIw" id="91e-aU-KDq"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="-109.5"/>
+        </view>
+    </objects>
+</document>

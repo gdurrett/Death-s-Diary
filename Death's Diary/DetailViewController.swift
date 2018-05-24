@@ -14,8 +14,6 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
     
-    @IBOutlet weak var eventDescription: UILabel!
-    
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle
         if userIsInTheMiddleOfTyping {
@@ -37,6 +35,9 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func sendClear(_ sender: Any) {
+        display.text = "0"
+    }
     let huntEvents = DataModel.sharedInstance.allHuntEvents
     var resultInt = Int()
     var userIsInTheMiddleOfTyping = false
@@ -50,6 +51,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        display.text = "0"
         // Do any additional setup after loading the view.
     }
 

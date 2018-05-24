@@ -53,7 +53,7 @@ class MasterViewController: UITableViewController {
         }
     }
     let tables = [
-        Table(name: "Cat-Bot", description: "MEE-OW",
+        Table(name: "Hunt", description: "MEE-OW",
                 iconName: "meetcatbot", weapon: .sword),
         Table(name: "Dog-Bot", description: "BOW-WOW",
                 iconName: "meetdogbot", weapon: .blowgun),
