@@ -17,7 +17,6 @@ class EventTableResultCell: UITableViewCell {
     
     var event: EventResult? {
         didSet {
-            //eventResultDescription.sizeToFit()
             eventDieResult.text = event?.eventDieResult
             eventDieResult.padding = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 0)
             eventResultDescription.attributedText = event?.eventResultDescription

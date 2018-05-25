@@ -11,13 +11,8 @@ import Foundation
 class EventResult {
     
     let eventDieResult: String
-    //let eventResultDescription: String
     let eventResultDescription: NSMutableAttributedString
 
-//    init(eventDieResult: String, eventResultDescription: String) {
-//        self.eventDieResult = eventDieResult
-//        self.eventResultDescription = eventResultDescription
-//    }
     init(eventDieResult: String, eventResultDescription: NSMutableAttributedString) {
         self.eventDieResult = eventDieResult
         self.eventResultDescription = eventResultDescription

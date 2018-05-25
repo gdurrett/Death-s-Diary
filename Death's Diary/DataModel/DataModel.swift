@@ -76,6 +76,13 @@ class DataModel {
         
         let huntEvent10 = HuntEvent(eventNumber: "9", eventText: "This event cannot be rerolled or avoided in any way.\n\nThe ground quakes and cracks beneath the survivors. A colossal worm bursts from below, its skin a mosaic of screaming faces. The mere sight of it is maddening.\n\nAll survivors gain 1 random disorder and must spend 1 survival or be devoured whole. If any survivor has noisy gear, the Harvester is drawn to the sound and they are instantly devoured. Nothing can save them.\n\nThe creature is so horrifying that the survivors' brains erase the experience from their memories. Do not gain the benefits of your death principle.", eventTitle: "10 | Harvester", eventDie: "N/A", eventDieRoller: "N/A", eventResults: [])
         allHuntEvents.append(huntEvent10)
+        
+        let eventResult11a = EventResult(eventDieResult: "1 - 3", eventResultDescription: NSMutableAttributedString().appendWith("You discover just how sickening playing with feces is. Lose 1 survival and roll again on the hunt event table before moving on the hunt board."))
+        let eventResult11b = EventResult(eventDieResult: "4 - 6", eventResultDescription: NSMutableAttributedString().appendWith("The dropping tell a story. You are on the right track. Gain +1 survival."))
+        let eventResult11c = EventResult(eventDieResult: "7+", eventResultDescription: NSMutableAttributedString().appendWith("You know these droppings well. You may skip the next hunt space. If this move begins the showdown, the survivors ").appendWith(weight: .bold, "ambush").appendWith(" their quarry"))
+        let huntEvent11 = HuntEvent(eventNumber: "10", eventText: "The survivors find some monster droppings, like those of their quarry. The event revealer chooses to either investigate or consume the dorppings (choose only one).\n\nIf the event revealer investigates, gain +1 understanding and roll 1d10.", eventTitle: "11 | Monster Droppings", eventDie: "1d10", eventDieRoller: "Event revealer - Investigate", eventResults: [eventResult11a, eventResult11b, eventResult11c])
+        allHuntEvents.append(huntEvent11)
+        
     }
 }
 extension NSMutableAttributedString {

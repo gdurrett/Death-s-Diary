@@ -23,7 +23,6 @@ class EventDetailViewController: UIViewController {
 
         eventTableView.dataSource = self
         eventTableView.delegate = self
-        //eventDescription.delegate = self
 
         // Title manipulations
         eventTitle.text = chosenEvent?.eventTitle
@@ -40,13 +39,11 @@ class EventDetailViewController: UIViewController {
         eventTableView.estimatedRowHeight = 100
         eventTableView.separatorStyle = .none
         
-        //adjustUITextViewHeight(view: eventDescription) // See if we can dynamically size
         eventTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }
@@ -93,7 +90,6 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource,
     func adjustUITextViewHeight(view : UITextView)
     {
         view.translatesAutoresizingMaskIntoConstraints = true
-
         view.sizeToFit()
         view.isScrollEnabled = false
     }
