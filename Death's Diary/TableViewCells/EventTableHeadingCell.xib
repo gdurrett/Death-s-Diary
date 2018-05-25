@@ -13,38 +13,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EventTableHeadingCell" customModule="Death_s_Diary" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="411" height="31"/>
+            <rect key="frame" x="0.0" y="0.0" width="430" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONY-zk-L8e">
-                    <rect key="frame" x="15" y="1" width="60" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONY-zk-L8e">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
                     <color key="backgroundColor" red="0.15685143039999999" green="0.66223261659999999" blue="0.78726117230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="Sy3-gL-SZc"/>
-                        <constraint firstAttribute="height" constant="30" id="cnq-Pq-EAt"/>
+                        <constraint firstAttribute="height" constant="35" id="7Zi-8B-YPk"/>
+                        <constraint firstAttribute="width" constant="60" id="pu5-kE-RSu"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-3F-xTg">
-                    <rect key="frame" x="75" y="1" width="335" height="30"/>
+                    <rect key="frame" x="60" y="0.0" width="370" height="35"/>
                     <color key="backgroundColor" red="0.15685143039999999" green="0.66223261659999999" blue="0.78726117230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="D5Q-Wa-UQ1"/>
+                        <constraint firstAttribute="height" constant="35" id="Hfm-FO-5ov"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrm-2p-L5q">
-                    <rect key="frame" x="0.0" y="1" width="15" height="30"/>
-                    <color key="backgroundColor" red="0.15685143039999999" green="0.66223261659999999" blue="0.78726117230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="15" id="ggt-0T-9x6"/>
-                        <constraint firstAttribute="height" constant="30" id="j6e-bx-8b3"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -52,13 +41,11 @@
             <color key="backgroundColor" red="0.99070551616999036" green="0.98775529251765792" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <accessibility key="accessibilityConfiguration" identifier="EventTableHeadingCell"/>
             <constraints>
-                <constraint firstItem="nrm-2p-L5q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DcZ-Xv-rd6"/>
-                <constraint firstItem="nrm-2p-L5q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="1" id="ZL7-bo-fXJ"/>
-                <constraint firstItem="Auq-3F-xTg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="1" id="dej-sK-yYa"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Auq-3F-xTg" secondAttribute="trailing" constant="1" id="fVm-LE-8LU"/>
-                <constraint firstItem="Auq-3F-xTg" firstAttribute="leading" secondItem="ONY-zk-L8e" secondAttribute="trailing" id="gZz-vW-FLY"/>
-                <constraint firstItem="ONY-zk-L8e" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="1" id="oD7-QX-RfE"/>
-                <constraint firstItem="ONY-zk-L8e" firstAttribute="leading" secondItem="nrm-2p-L5q" secondAttribute="trailing" id="t1h-c8-E8R"/>
+                <constraint firstItem="Auq-3F-xTg" firstAttribute="leading" secondItem="ONY-zk-L8e" secondAttribute="trailing" id="56D-5a-oEg"/>
+                <constraint firstItem="ONY-zk-L8e" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AHS-bN-ad0"/>
+                <constraint firstItem="ONY-zk-L8e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TmP-wP-nmw"/>
+                <constraint firstItem="Auq-3F-xTg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kdM-00-Xsa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Auq-3F-xTg" secondAttribute="trailing" id="tTK-Jk-y9E"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -66,7 +53,7 @@
                 <outlet property="eventDie" destination="ONY-zk-L8e" id="YQW-Z9-8Ej"/>
                 <outlet property="eventDieRoller" destination="Auq-3F-xTg" id="CcT-C4-X6X"/>
             </connections>
-            <point key="canvasLocation" x="51.5" y="-264.5"/>
+            <point key="canvasLocation" x="51" y="-273"/>
         </view>
     </objects>
 </document>

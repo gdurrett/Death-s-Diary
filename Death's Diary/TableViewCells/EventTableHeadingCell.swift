@@ -17,6 +17,7 @@ class EventTableHeadingCell: UITableViewCell {
     var event: HuntEvent? {
         didSet {
             eventDie.text = event!.eventDie
+            eventDie.padding = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 0)
             eventDieRoller.text = event!.eventDieRoller
         }
     }

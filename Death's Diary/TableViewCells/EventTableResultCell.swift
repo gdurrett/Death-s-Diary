@@ -17,9 +17,11 @@ class EventTableResultCell: UITableViewCell {
     
     var event: EventResult? {
         didSet {
-            eventResultDescription.sizeToFit()
+            //eventResultDescription.sizeToFit()
             eventDieResult.text = event?.eventDieResult
+            eventDieResult.padding = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 0)
             eventResultDescription.attributedText = event?.eventResultDescription
+            eventResultDescription.padding = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         }
     }
     static var nib:UINib {

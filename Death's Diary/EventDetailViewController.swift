@@ -23,11 +23,14 @@ class EventDetailViewController: UIViewController {
 
         eventTableView.dataSource = self
         eventTableView.delegate = self
-        eventDescription.delegate = self
+        //eventDescription.delegate = self
 
+        // Title manipulations
         eventTitle.text = chosenEvent?.eventTitle
+        eventTitle.padding = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 0) // Using UILabel extension in MVC
+        // Description manipulations
         eventDescription.text = chosenEvent?.eventText
-        eventDescription.sizeToFit()
+        eventDescription.textContainerInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 0)
         
         eventTableView?.register(EventTableHeadingCell.nib, forCellReuseIdentifier: EventTableHeadingCell.identifier)
         eventTableView?.register(EventTableResultCell.nib, forCellReuseIdentifier: EventTableResultCell.identifier)
@@ -37,7 +40,7 @@ class EventDetailViewController: UIViewController {
         eventTableView.estimatedRowHeight = 100
         eventTableView.separatorStyle = .none
         
-        adjustUITextViewHeight(arg: eventDescription) // See if we can dynamically size
+        //adjustUITextViewHeight(view: eventDescription) // See if we can dynamically size
         eventTableView.reloadData()
     }
 
@@ -47,7 +50,7 @@ class EventDetailViewController: UIViewController {
     }
     
 }
-extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
+extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         if chosenEvent!.eventResults.count == 0 {
@@ -60,7 +63,6 @@ extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate,
         if section == 0 {
             return 1
         } else {
-            print(chosenEvent!.eventResults.count)
             return chosenEvent!.eventResults.count
         }
     }
@@ -73,7 +75,6 @@ extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate,
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: EventTableResultCell.identifier, for: indexPath) as! EventTableResultCell
             cell.event = event.eventResults[indexPath.row]
-            print("Got here?")
             return cell
         } else {
             let cell = UITableViewCell(frame: .zero)
@@ -81,19 +82,19 @@ extension EventDetailViewController: UITableViewDataSource, UITableViewDelegate,
         }
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if (indexPath.row % 2 == 0)
-        {
+        if (indexPath.row % 2 == 0) {
             cell.backgroundColor = UIColor.lightGray
         } else {
             cell.backgroundColor = UIColor.lightText
         }
     }
-    
+
     // For textView
-    func adjustUITextViewHeight(arg : UITextView)
+    func adjustUITextViewHeight(view : UITextView)
     {
-        arg.translatesAutoresizingMaskIntoConstraints = true
-        arg.sizeToFit()
-        arg.isScrollEnabled = false
+        view.translatesAutoresizingMaskIntoConstraints = true
+
+        view.sizeToFit()
+        view.isScrollEnabled = false
     }
 }
