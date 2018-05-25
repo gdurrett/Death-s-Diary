@@ -157,3 +157,20 @@ extension UILabel {
         return contentSize
     }
 }
+extension NSMutableAttributedString {
+    
+    @discardableResult func appendWith(color: UIColor = UIColor.darkText, weight: UIFont.Weight = .regular, ofSize: CGFloat = 14.0, _ text: String) -> NSMutableAttributedString{
+        let attrText = NSAttributedString.makeWith(color: color, weight: weight, ofSize:ofSize, text)
+        self.append(attrText)
+        return self
+    }
+    
+}
+extension NSAttributedString {
+    
+    public static func makeWith(color: UIColor = UIColor.darkText, weight: UIFont.Weight = .regular, ofSize: CGFloat = 14.0, _ text: String) -> NSMutableAttributedString {
+        
+        let attrs = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: ofSize, weight: weight), NSAttributedStringKey.foregroundColor: color]
+        return NSMutableAttributedString(string: text, attributes:attrs)
+    }
+}

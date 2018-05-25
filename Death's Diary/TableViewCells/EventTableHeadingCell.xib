@@ -29,7 +29,7 @@
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-3F-xTg">
                     <rect key="frame" x="60" y="0.0" width="370" height="35"/>
-                    <color key="backgroundColor" red="0.15685143039999999" green="0.66223261659999999" blue="0.78726117230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.66274509803921566" blue="0.78823529411764703" alpha="0.79000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Hfm-FO-5ov"/>
                     </constraints>

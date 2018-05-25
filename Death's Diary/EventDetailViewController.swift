@@ -41,26 +41,25 @@ class EventDetailViewController: UIViewController {
         
         eventTableView.reloadData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
 }
 extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        if chosenEvent!.eventResults.count == 0 {
+
+        if chosenEvent!.eventResults1.count == 0 {
             return 0
+        } else if chosenEvent!.numEventTables == 2 {
+            return 4
         } else {
             return 2
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        if section == 0 || section == 2 {
             return 1
         } else {
-            return chosenEvent!.eventResults.count
+            return chosenEvent!.eventResults1.count
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,10 +67,20 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource,
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: EventTableHeadingCell.identifier, for: indexPath) as! EventTableHeadingCell
             cell.event = event
+            cell.dieRoller = chosenEvent!.eventDieRoller1
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: EventTableResultCell.identifier, for: indexPath) as! EventTableResultCell
-            cell.event = event.eventResults[indexPath.row]
+            cell.event = event.eventResults1[indexPath.row]
+            return cell
+        } else if indexPath.section == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: EventTableHeadingCell.identifier, for: indexPath) as! EventTableHeadingCell
+            cell.event = event
+            cell.dieRoller = chosenEvent!.eventDieRoller2
+            return cell
+        } else if indexPath.section == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: EventTableResultCell.identifier, for: indexPath) as! EventTableResultCell
+            cell.event = event.eventResults2[indexPath.row]
             return cell
         } else {
             let cell = UITableViewCell(frame: .zero)

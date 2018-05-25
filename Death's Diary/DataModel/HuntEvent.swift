@@ -14,16 +14,22 @@ class HuntEvent {
     let eventText: String
     let eventTitle: String
     let eventDie: String
-    let eventDieRoller: String
-    let eventResults: [EventResult]
+    let eventDieRoller1: String
+    let eventDieRoller2: String
+    let eventResults1: [EventResult]
+    let eventResults2: [EventResult]
+    let numEventTables: Int
     
-    init(eventNumber: String, eventText: String, eventTitle: String, eventDie: String, eventDieRoller: String, eventResults: [EventResult]) {
+    init(eventNumber: String, eventText: String, eventTitle: String, eventDie: String, eventDieRoller1: String, eventDieRoller2: String = "", eventResults1: [EventResult], eventResults2: [EventResult] = [], numEventTables: Int = 1) {
         self.eventNumber = eventNumber
         self.eventText = eventText
         self.eventTitle = eventTitle
         self.eventDie = eventDie
-        self.eventDieRoller = eventDieRoller
-        self.eventResults = eventResults
+        self.eventDieRoller1 = eventDieRoller1
+        self.eventDieRoller2 = eventDieRoller2
+        self.eventResults1 = eventResults1
+        self.eventResults2 = eventResults2
+        self.numEventTables = numEventTables
     }
     
 }
