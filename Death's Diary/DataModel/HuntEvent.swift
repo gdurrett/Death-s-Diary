@@ -11,7 +11,7 @@ import Foundation
 class HuntEvent {
     
     let eventNumber: String
-    let eventText: String
+    let eventText: NSMutableAttributedString
     let eventTitle: String
     let eventDie: String
     let eventDieRoller1: String
@@ -20,7 +20,7 @@ class HuntEvent {
     let eventResults2: [EventResult]
     let numEventTables: Int
     
-    init(eventNumber: String, eventText: String, eventTitle: String, eventDie: String, eventDieRoller1: String, eventDieRoller2: String = "", eventResults1: [EventResult], eventResults2: [EventResult] = [], numEventTables: Int = 1) {
+    init(eventNumber: String, eventText: NSMutableAttributedString, eventTitle: String, eventDie: String, eventDieRoller1: String, eventDieRoller2: String = "", eventResults1: [EventResult], eventResults2: [EventResult] = [], numEventTables: Int = 1) {
         self.eventNumber = eventNumber
         self.eventText = eventText
         self.eventTitle = eventTitle

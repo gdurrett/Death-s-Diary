@@ -28,7 +28,7 @@ class EventDetailViewController: UIViewController {
         eventTitle.text = chosenEvent?.eventTitle
         eventTitle.padding = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 0) // Using UILabel extension in MVC
         // Description manipulations
-        eventDescription.text = chosenEvent?.eventText
+        eventDescription.attributedText = chosenEvent?.eventText
         eventDescription.textContainerInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 0)
         
         eventTableView?.register(EventTableHeadingCell.nib, forCellReuseIdentifier: EventTableHeadingCell.identifier)
