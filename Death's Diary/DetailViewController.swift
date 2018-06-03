@@ -26,9 +26,12 @@ class DetailViewController: UIViewController {
     }
     @IBAction func sendRoll(_ sender: Any) {
         resultInt = Int(display.text!)! - 1
-        if resultInt < 0 || resultInt > 100 {
+        if resultInt < 0 || resultInt > 99 {
             print("Please type a number between 1 and 100")
-            display.text = "0"
+            showFormAlert(alertText: "Invalid Number", message: """
+Please choose a number from 1 to 100!
+""")
+            display.text = ""
         } else {
             performSegue(withIdentifier: "ShowEventDetail", sender: self)
             userIsInTheMiddleOfTyping = false
@@ -51,7 +54,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        display.text = "0"
+        display.text = "Enter # from 1 to 100"
         // Do any additional setup after loading the view.
     }
 
@@ -75,15 +78,19 @@ class DetailViewController: UIViewController {
         //weaponImageView.image = table?.weaponImage
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showFormAlert(alertText: String, message: String) {
+        let alertView = UIAlertController(
+            title: alertText,
+            message: message,
+            preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+        //alertView.view.tintColor = colorDefinitions.scenarioAlertViewTintColor
+        alertView.addAction(action)
+        alertView.popoverPresentationController?.sourceView = self.view
+        
+        present(alertView, animated: true, completion: nil)
     }
-    */
 
 }
 extension DetailViewController: TableSelectionDelegate {
