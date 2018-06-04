@@ -21,9 +21,21 @@ class EventTableHeadingCell: UITableViewCell {
             eventDieRoller.text = dieRoller
         }
     }
-    var event: HuntEvent? {
+    var huntEvent: HuntEvent? {
         didSet {
-            eventDie.text = event!.eventDie
+            eventDie.text = huntEvent!.eventDie
+            eventDie.padding = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 0)
+        }
+    }
+    var brainEvent: BrainEvent? {
+        didSet {
+            eventDie.text = brainEvent!.eventDie
+            eventDie.padding = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 0)
+        }
+    }
+    var injuryEvent: InjuryEvent? {
+        didSet {
+            eventDie.text = injuryEvent!.eventDie
             eventDie.padding = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 0)
         }
     }

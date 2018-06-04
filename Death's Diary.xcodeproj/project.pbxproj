@@ -7,45 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB7445DD20C5A44200CAA684 /* BrainEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7445DC20C5A44200CAA684 /* BrainEventDetailViewController.swift */; };
+		FB7445DF20C5A92700CAA684 /* BrainEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7445DE20C5A92700CAA684 /* BrainEvent.swift */; };
+		FB93DFC420C5C58F00CAA684 /* InjuryEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93DFC320C5C58F00CAA684 /* InjuryEvent.swift */; };
+		FB93DFC620C5C77E00CAA684 /* InjuryEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93DFC520C5C77E00CAA684 /* InjuryEventDetailViewController.swift */; };
+		FB93DFC820C5EEAA00CAA684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB93DFC720C5EEAA00CAA684 /* Assets.xcassets */; };
 		FBB4D92320A23C7E00CAA684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */; };
 		FBB4D92820A23C7E00CAA684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4D92620A23C7E00CAA684 /* Main.storyboard */; };
-		FBB4D92A20A23C7F00CAA684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB4D92920A23C7F00CAA684 /* Assets.xcassets */; };
 		FBB4D92D20A23C7F00CAA684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB4D92B20A23C7F00CAA684 /* LaunchScreen.storyboard */; };
 		FBB4D93520A240E400CAA684 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93420A240E400CAA684 /* MasterViewController.swift */; };
 		FBB4D93720A24F9800CAA684 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93620A24F9800CAA684 /* DetailViewController.swift */; };
-		FBB4D93920A255A400CAA684 /* tables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93820A255A400CAA684 /* tables.swift */; };
+		FBB4D93920A255A400CAA684 /* Tables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93820A255A400CAA684 /* Tables.swift */; };
 		FBB4D93B20A3A5BE00CAA684 /* HuntEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93A20A3A5BE00CAA684 /* HuntEvent.swift */; };
 		FBB4D93D20A3ABDB00CAA684 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93C20A3ABDB00CAA684 /* DataModel.swift */; };
-		FBB4D93F20A5082B00CAA684 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93E20A5082B00CAA684 /* EventDetailViewController.swift */; };
+		FBB4D93F20A5082B00CAA684 /* HuntEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB4D93E20A5082B00CAA684 /* HuntEventDetailViewController.swift */; };
 		FBDFE60820B4ABC300CAA684 /* EventTableHeadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFE60720B4ABC300CAA684 /* EventTableHeadingCell.swift */; };
 		FBDFE60A20B4ACB000CAA684 /* EventTableHeadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDFE60920B4ACB000CAA684 /* EventTableHeadingCell.xib */; };
 		FBDFE60C20B4B99B00CAA684 /* EventResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFE60B20B4B99B00CAA684 /* EventResult.swift */; };
 		FBDFE60F20B4C0FE00CAA684 /* EventTableResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFE60E20B4C0FE00CAA684 /* EventTableResultCell.swift */; };
 		FBDFE61120B4C12800CAA684 /* EventTableResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDFE61020B4C12800CAA684 /* EventTableResultCell.xib */; };
-		FBDFE61420B5F89800CAA684 /* Amplitude-Regular_3557.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBDFE61220B5F89700CAA684 /* Amplitude-Regular_3557.ttf */; };
-		FBDFE61520B5F89800CAA684 /* Amplitude-Bold_3532.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBDFE61320B5F89700CAA684 /* Amplitude-Bold_3532.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB7445DC20C5A44200CAA684 /* BrainEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainEventDetailViewController.swift; sourceTree = "<group>"; };
+		FB7445DE20C5A92700CAA684 /* BrainEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainEvent.swift; sourceTree = "<group>"; };
+		FB93DFC320C5C58F00CAA684 /* InjuryEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryEvent.swift; sourceTree = "<group>"; };
+		FB93DFC520C5C77E00CAA684 /* InjuryEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryEventDetailViewController.swift; sourceTree = "<group>"; };
+		FB93DFC720C5EEAA00CAA684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		FBB4D91F20A23C7E00CAA684 /* Death's Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Death's Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB4D92720A23C7E00CAA684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBB4D92920A23C7F00CAA684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB4D92C20A23C7F00CAA684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBB4D92E20A23C7F00CAA684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBB4D93420A240E400CAA684 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		FBB4D93620A24F9800CAA684 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FBB4D93820A255A400CAA684 /* tables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tables.swift; sourceTree = "<group>"; };
+		FBB4D93820A255A400CAA684 /* Tables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tables.swift; sourceTree = "<group>"; };
 		FBB4D93A20A3A5BE00CAA684 /* HuntEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntEvent.swift; sourceTree = "<group>"; };
 		FBB4D93C20A3ABDB00CAA684 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		FBB4D93E20A5082B00CAA684 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		FBB4D93E20A5082B00CAA684 /* HuntEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntEventDetailViewController.swift; sourceTree = "<group>"; };
 		FBDFE60720B4ABC300CAA684 /* EventTableHeadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableHeadingCell.swift; sourceTree = "<group>"; };
 		FBDFE60920B4ACB000CAA684 /* EventTableHeadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableHeadingCell.xib; sourceTree = "<group>"; };
 		FBDFE60B20B4B99B00CAA684 /* EventResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResult.swift; sourceTree = "<group>"; };
 		FBDFE60E20B4C0FE00CAA684 /* EventTableResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableResultCell.swift; sourceTree = "<group>"; };
 		FBDFE61020B4C12800CAA684 /* EventTableResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableResultCell.xib; sourceTree = "<group>"; };
-		FBDFE61220B5F89700CAA684 /* Amplitude-Regular_3557.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amplitude-Regular_3557.ttf"; path = "../../../Downloads/Amplitude-Regular_3557.ttf"; sourceTree = "<group>"; };
-		FBDFE61320B5F89700CAA684 /* Amplitude-Bold_3532.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amplitude-Bold_3532.ttf"; path = "../../../Downloads/Amplitude-Bold_3532.ttf"; sourceTree = "<group>"; };
 		FBDFE61720B6016200CAA684 /* Amplitude-Bold_3532.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amplitude-Bold_3532.ttf"; sourceTree = "<group>"; };
 		FBDFE61820B6016200CAA684 /* Amplitude-Regular_3557.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amplitude-Regular_3557.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB7445D920C4A77D00CAA684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB93DFC720C5EEAA00CAA684 /* Assets.xcassets */,
+				FBDFE60D20B4C09B00CAA684 /* TableViewCells */,
+				FBDFE61620B6016100CAA684 /* Fonts */,
+				FBB4D92620A23C7E00CAA684 /* Main.storyboard */,
+				FBB4D93420A240E400CAA684 /* MasterViewController.swift */,
+				FBB4D93620A24F9800CAA684 /* DetailViewController.swift */,
+				FBB4D93E20A5082B00CAA684 /* HuntEventDetailViewController.swift */,
+				FB7445DC20C5A44200CAA684 /* BrainEventDetailViewController.swift */,
+				FB93DFC520C5C77E00CAA684 /* InjuryEventDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FBB4D91620A23C7E00CAA684 = {
 			isa = PBXGroup;
 			children = (
@@ -80,20 +100,11 @@
 		FBB4D92120A23C7E00CAA684 /* Death's Diary */ = {
 			isa = PBXGroup;
 			children = (
-				FBDFE61620B6016100CAA684 /* Fonts */,
-				FBDFE61320B5F89700CAA684 /* Amplitude-Bold_3532.ttf */,
-				FBDFE61220B5F89700CAA684 /* Amplitude-Regular_3557.ttf */,
-				FBDFE60D20B4C09B00CAA684 /* TableViewCells */,
+				FB7445D920C4A77D00CAA684 /* View */,
+				FBDFE61920B7592700CAA684 /* DataModel */,
 				FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */,
-				FBB4D92620A23C7E00CAA684 /* Main.storyboard */,
-				FBB4D93820A255A400CAA684 /* tables.swift */,
-				FBB4D93420A240E400CAA684 /* MasterViewController.swift */,
-				FBB4D93620A24F9800CAA684 /* DetailViewController.swift */,
-				FBB4D93E20A5082B00CAA684 /* EventDetailViewController.swift */,
-				FBB4D92920A23C7F00CAA684 /* Assets.xcassets */,
 				FBB4D92B20A23C7F00CAA684 /* LaunchScreen.storyboard */,
 				FBB4D92E20A23C7F00CAA684 /* Info.plist */,
-				FBDFE61920B7592700CAA684 /* DataModel */,
 			);
 			path = "Death's Diary";
 			sourceTree = "<group>";
@@ -121,9 +132,12 @@
 		FBDFE61920B7592700CAA684 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				FBB4D93820A255A400CAA684 /* Tables.swift */,
 				FBB4D93A20A3A5BE00CAA684 /* HuntEvent.swift */,
 				FBB4D93C20A3ABDB00CAA684 /* DataModel.swift */,
 				FBDFE60B20B4B99B00CAA684 /* EventResult.swift */,
+				FB7445DE20C5A92700CAA684 /* BrainEvent.swift */,
+				FB93DFC320C5C58F00CAA684 /* InjuryEvent.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -189,10 +203,8 @@
 				FBB4D92D20A23C7F00CAA684 /* LaunchScreen.storyboard in Resources */,
 				FBDFE60A20B4ACB000CAA684 /* EventTableHeadingCell.xib in Resources */,
 				FBDFE61120B4C12800CAA684 /* EventTableResultCell.xib in Resources */,
-				FBB4D92A20A23C7F00CAA684 /* Assets.xcassets in Resources */,
 				FBB4D92820A23C7E00CAA684 /* Main.storyboard in Resources */,
-				FBDFE61520B5F89800CAA684 /* Amplitude-Bold_3532.ttf in Resources */,
-				FBDFE61420B5F89800CAA684 /* Amplitude-Regular_3557.ttf in Resources */,
+				FB93DFC820C5EEAA00CAA684 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,14 +216,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB4D93D20A3ABDB00CAA684 /* DataModel.swift in Sources */,
+				FB93DFC420C5C58F00CAA684 /* InjuryEvent.swift in Sources */,
+				FB7445DF20C5A92700CAA684 /* BrainEvent.swift in Sources */,
 				FBDFE60820B4ABC300CAA684 /* EventTableHeadingCell.swift in Sources */,
 				FBDFE60C20B4B99B00CAA684 /* EventResult.swift in Sources */,
-				FBB4D93920A255A400CAA684 /* tables.swift in Sources */,
+				FBB4D93920A255A400CAA684 /* Tables.swift in Sources */,
 				FBB4D93520A240E400CAA684 /* MasterViewController.swift in Sources */,
+				FB7445DD20C5A44200CAA684 /* BrainEventDetailViewController.swift in Sources */,
 				FBB4D92320A23C7E00CAA684 /* AppDelegate.swift in Sources */,
 				FBDFE60F20B4C0FE00CAA684 /* EventTableResultCell.swift in Sources */,
 				FBB4D93720A24F9800CAA684 /* DetailViewController.swift in Sources */,
-				FBB4D93F20A5082B00CAA684 /* EventDetailViewController.swift in Sources */,
+				FB93DFC620C5C77E00CAA684 /* InjuryEventDetailViewController.swift in Sources */,
+				FBB4D93F20A5082B00CAA684 /* HuntEventDetailViewController.swift in Sources */,
 				FBB4D93B20A3A5BE00CAA684 /* HuntEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

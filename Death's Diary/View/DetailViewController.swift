@@ -9,7 +9,19 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet weak var headButton: UIButton!
+    
+    @IBOutlet weak var bodyButton: UIButton!
+    
+    @IBOutlet weak var waistButton: UIButton!
+    
+    @IBOutlet weak var armsButton: UIButton!
+    
+    @IBOutlet weak var legsButton: UIButton!
+    
+    
+    @IBAction func headButton(_ sender: Any) {
+    }
     @IBOutlet weak var nameLabel: UITextField!
     
     @IBOutlet weak var display: UILabel!
@@ -28,6 +40,7 @@ class DetailViewController: UIViewController {
         resultInt = Int(display.text!)! - 1
         switch table!.type {
         case .hunt:
+            
             if resultInt < 0 || resultInt > 99 {
                 showFormAlert(alertText: "Invalid Number", message: """
 Please choose a number from 1 to 100!
@@ -38,16 +51,18 @@ Please choose a number from 1 to 100!
                 userIsInTheMiddleOfTyping = false
             }
         case .brain:
+            
             if resultInt < 0 || resultInt > 12 {
                 showFormAlert(alertText: "Invalid Number", message: """
 Please choose a number from 1 to 13!
 """)
                 display.text = ""
             } else {
-                performSegue(withIdentifier: "ShowBrainTraumaDetail", sender: self)
+                performSegue(withIdentifier: "ShowBrainEventDetail", sender: self)
                 userIsInTheMiddleOfTyping = false
             }
         case .injury:
+            
             if resultInt < 0 || resultInt > 12 {
                 showFormAlert(alertText: "Invalid Number", message: """
 Please choose a number from 1 to 13!
@@ -81,7 +96,10 @@ Please choose a number from 1 to 13!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        buttonsVisible(false)
+        display.text = "Enter # from 1 to 100"
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,8 +111,8 @@ Please choose a number from 1 to 13!
         if segue.identifier == "ShowHuntEventDetail" {
             let destinationVC = segue.destination as! HuntEventDetailViewController
             destinationVC.chosenEvent = huntEvents[resultInt]
-        } else if segue.identifier == "ShowBrainTraumaDetail" {
-            let destinationVC = segue.destination as! BrainEventDetailViewContoller
+        } else if segue.identifier == "ShowBrainEventDetail" {
+            let destinationVC = segue.destination as! BrainEventDetailViewController
             destinationVC.chosenEvent = brainEvents[resultInt]
         } else if segue.identifier == "ShowInjuryEventDetail" {
             let destinationVC = segue.destination as! InjuryEventDetailViewController
@@ -128,5 +146,12 @@ Please choose a number from 1 to 13!
 extension DetailViewController: TableSelectionDelegate {
     func tableSelected(_ newTable: Table) {
         table = newTable
+    }
+    func buttonsVisible(_ visibility: Bool) {
+        headButton.isEnabled = visibility
+        bodyButton.isEnabled = visibility
+        waistButton.isEnabled = visibility
+        armsButton.isEnabled = visibility
+        legsButton.isEnabled = visibility
     }
 }
