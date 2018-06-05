@@ -9,81 +9,30 @@
 import UIKit
 
 class InjuryEventDetailViewController: UIViewController {
-
-    @IBOutlet weak var eventTableView: UITableView!
     
     @IBOutlet weak var eventTitle: UILabel!
     
     @IBOutlet weak var eventDescription: UITextView!
     
     var chosenEvent: InjuryEvent?
+    var chosenResult: EventResult?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        eventTableView.dataSource = self
-        eventTableView.delegate = self
         
         // Title manipulations
-        eventTitle.text = chosenEvent?.eventTitle
+        eventTitle.attributedText = chosenEvent?.eventText
         eventTitle.padding = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 0) // Using UILabel extension in MVC
         // Description manipulations
-        eventDescription.attributedText = chosenEvent?.eventText
+        eventDescription.attributedText = chosenResult!.eventResultDescription
         eventDescription.textContainerInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 0)
-        
-        eventTableView?.register(EventTableHeadingCell.nib, forCellReuseIdentifier: EventTableHeadingCell.identifier)
-        eventTableView?.register(EventTableResultCell.nib, forCellReuseIdentifier: EventTableResultCell.identifier)
-        
-        eventTableView.tableFooterView = UIView(frame: .zero)
-        eventTableView.rowHeight = UITableViewAutomaticDimension
-        eventTableView.estimatedRowHeight = 100
-        eventTableView.separatorStyle = .none
-        
-        eventTableView.reloadData()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-}
-
-extension InjuryEventDetailViewController: UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 || section == 2 {
-            return 1
-        } else {
-            return chosenEvent!.eventResults.count
-        }
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let event = chosenEvent!
-        if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: EventTableHeadingCell.identifier, for: indexPath) as! EventTableHeadingCell
-            cell.injuryEvent = event
-            return cell
-        } else if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: EventTableResultCell.identifier, for: indexPath) as! EventTableResultCell
-            cell.event = event.eventResults[indexPath.row]
-            return cell
-        } else {
-            let cell = UITableViewCell(frame: .zero)
-            return cell
-        }
-    }
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if (indexPath.row % 2 == 0) {
-            cell.backgroundColor = UIColor.lightGray
-        } else {
-            cell.backgroundColor = UIColor.lightText
-        }
-    }
-    
     // For textView
     func adjustUITextViewHeight(view : UITextView)
     {

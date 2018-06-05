@@ -52,22 +52,9 @@ class BrainEventDetailViewController: UIViewController {
 extension BrainEventDetailViewController: UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        
-//        if chosenEvent!.eventResults1.count == 0 {
-//            return 0
-//        } else if chosenEvent!.numEventTables == 2 {
-//            return 4
-//        } else {
-//            return 2
-//        }
         return 0
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if section == 0 || section == 2 {
-//            return 1
-//        } else {
-//            return chosenEvent!.eventResults1.count
-//        }
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

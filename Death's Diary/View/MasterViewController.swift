@@ -16,8 +16,10 @@ class MasterViewController: UITableViewController {
 
     weak var delegate: TableSelectionDelegate?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Choose a Table"
     }
 
     override func didReceiveMemoryWarning() {

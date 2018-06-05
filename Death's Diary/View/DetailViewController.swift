@@ -85,9 +85,10 @@ Please choose a number from 1 to 13!
             }
         case .injury:
             
-            if resultInt < 0 || resultInt > 12 {
+            if resultInt < 0 {
                 showFormAlert(alertText: "Invalid Number", message: """
-Please choose a number from 1 to 13!
+Please choose a number
+greater than 0!
 """)
                 display.text = ""
             } else {
@@ -99,7 +100,7 @@ Please choose a number from 1 to 13!
     }
     
     @IBAction func sendClear(_ sender: Any) {
-        display.text = "0"
+        display.text = ""
     }
 
     let huntEvents = DataModel.sharedInstance.allHuntEvents
@@ -121,7 +122,6 @@ Please choose a number from 1 to 13!
         super.viewDidLoad()
         
         buttonsVisible(false)
-        display.text = "Enter # from 1 to 100"
         // Do any additional setup after loading the view.
     }
 
@@ -140,6 +140,13 @@ Please choose a number from 1 to 13!
         } else if segue.identifier == "ShowInjuryEventDetail" {
             let destinationVC = segue.destination as! InjuryEventDetailViewController
             destinationVC.chosenEvent = injuryEvents[injuryTableType]
+            var result: EventResult?
+            if resultInt > 9 {
+                result = injuryEvents[injuryTableType].eventResults[9]
+            } else {
+                result = injuryEvents[injuryTableType].eventResults[resultInt]
+            }
+            destinationVC.chosenResult = result
         }
     }
     
