@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Peb-7h-78z">
-                                <rect key="frame" x="48" y="219" width="280" height="380"/>
+                                <rect key="frame" x="48" y="201" width="280" height="380"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Oo-nx-eRg">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
@@ -216,7 +216,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-7y-kAV">
-                                <rect key="frame" x="48" y="159" width="279" height="40"/>
+                                <rect key="frame" x="48" y="141" width="279" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Tud-Uz-oli"/>
                                 </constraints>
@@ -225,13 +225,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVi-YQ-QJm">
-                                <rect key="frame" x="182" y="102" width="11" height="37"/>
+                                <rect key="frame" x="182" y="89" width="11" height="37"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Amplitude-Bold" family="Amplitude-Bold" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aCJ-f3-lo6">
-                                <rect key="frame" x="48" y="619" width="280" height="44"/>
+                                <rect key="frame" x="48" y="601" width="280" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDK-TA-tpl">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -241,7 +241,7 @@
                                         </constraints>
                                         <state key="normal" image="kdm_head_icon_gray"/>
                                         <connections>
-                                            <action selector="headButton:" destination="t7r-fd-5D8" eventType="touchUpInside" id="spN-h9-8kd"/>
+                                            <action selector="headButtonAction:" destination="t7r-fd-5D8" eventType="touchUpInside" id="j08-GZ-W4U"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN1-LA-zEV">
@@ -251,6 +251,9 @@
                                             <constraint firstAttribute="height" constant="44" id="mFK-eQ-AYn"/>
                                         </constraints>
                                         <state key="normal" image="kdm_body_icon_gray"/>
+                                        <connections>
+                                            <action selector="bodyButtonAction:" destination="t7r-fd-5D8" eventType="touchUpInside" id="Z9k-Ss-lMR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHy-ld-YdL">
                                         <rect key="frame" x="118" y="0.0" width="44" height="44"/>
@@ -259,6 +262,9 @@
                                             <constraint firstAttribute="height" constant="44" id="mP5-AP-g6x"/>
                                         </constraints>
                                         <state key="normal" image="kdm_waist_icon_gray"/>
+                                        <connections>
+                                            <action selector="waistButtonAction:" destination="t7r-fd-5D8" eventType="touchUpInside" id="DIM-Ot-4WK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-to-5Cm">
                                         <rect key="frame" x="177" y="0.0" width="44" height="44"/>
@@ -267,6 +273,9 @@
                                             <constraint firstAttribute="width" constant="44" id="qbm-Ch-Eah"/>
                                         </constraints>
                                         <state key="normal" image="kdm_arms_icon_gray"/>
+                                        <connections>
+                                            <action selector="armsButtonAction:" destination="t7r-fd-5D8" eventType="touchUpInside" id="o3g-M1-3xh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMl-cx-cFF">
                                         <rect key="frame" x="236" y="0.0" width="44" height="44"/>
@@ -275,6 +284,9 @@
                                             <constraint firstAttribute="height" constant="44" id="sSl-Hd-dU2"/>
                                         </constraints>
                                         <state key="normal" image="kdm_foot_icon_gray"/>
+                                        <connections>
+                                            <action selector="legsButtonAction:" destination="t7r-fd-5D8" eventType="touchUpInside" id="qol-d5-k2E"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -283,10 +295,10 @@
                         <constraints>
                             <constraint firstItem="Peb-7h-78z" firstAttribute="top" secondItem="rNe-7y-kAV" secondAttribute="bottom" constant="20" id="GVA-N8-fMA"/>
                             <constraint firstItem="rNe-7y-kAV" firstAttribute="centerX" secondItem="Pzk-W7-6VX" secondAttribute="centerX" id="WnW-s0-9Zr"/>
-                            <constraint firstItem="rNe-7y-kAV" firstAttribute="top" secondItem="tVi-YQ-QJm" secondAttribute="bottom" constant="20" id="Z2B-d0-ylq"/>
+                            <constraint firstItem="rNe-7y-kAV" firstAttribute="top" secondItem="tVi-YQ-QJm" secondAttribute="bottom" constant="15" id="Z2B-d0-ylq"/>
                             <constraint firstItem="Peb-7h-78z" firstAttribute="centerX" secondItem="Pzk-W7-6VX" secondAttribute="centerX" id="Zog-NS-y7G"/>
                             <constraint firstItem="Peb-7h-78z" firstAttribute="leading" secondItem="rNe-7y-kAV" secondAttribute="leading" id="dAH-ja-smq"/>
-                            <constraint firstItem="tVi-YQ-QJm" firstAttribute="top" secondItem="X2b-Pq-nh5" secondAttribute="top" constant="38" id="gmg-6M-pbS"/>
+                            <constraint firstItem="tVi-YQ-QJm" firstAttribute="top" secondItem="X2b-Pq-nh5" secondAttribute="top" constant="25" id="gmg-6M-pbS"/>
                             <constraint firstItem="rNe-7y-kAV" firstAttribute="leading" secondItem="DLN-Ry-PHr" secondAttribute="trailing" constant="-80" id="mdB-vP-Fd6"/>
                             <constraint firstItem="aCJ-f3-lo6" firstAttribute="top" secondItem="Peb-7h-78z" secondAttribute="bottom" constant="20" id="nBb-Ee-YQ2"/>
                             <constraint firstItem="aCJ-f3-lo6" firstAttribute="leading" secondItem="Peb-7h-78z" secondAttribute="leading" id="yRq-Bh-UMx"/>

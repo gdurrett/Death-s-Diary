@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum location {
+    case head, body, waist, arms, legs
+}
+
 class InjuryEvent {
     
     let eventNumber: String

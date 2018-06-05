@@ -19,9 +19,31 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var legsButton: UIButton!
     
-    
-    @IBAction func headButton(_ sender: Any) {
+    @IBAction func headButtonAction(_ sender: Any) {
+        nameLabel.text = ((table?.name)! + " - Head")
+        injuryTableType = 0
     }
+    
+    @IBAction func bodyButtonAction(_ sender: Any) {
+        nameLabel.text = ((table?.name)! + " - Body")
+        injuryTableType = 1
+    }
+    
+    @IBAction func waistButtonAction(_ sender: Any) {
+        nameLabel.text = ((table?.name)! + " - Waist")
+        injuryTableType = 2
+    }
+    
+    @IBAction func armsButtonAction(_ sender: Any) {
+        nameLabel.text = ((table?.name)! + " - Arms")
+        injuryTableType = 3
+    }
+    
+    @IBAction func legsButtonAction(_ sender: Any) {
+        nameLabel.text = ((table?.name)! + " - Legs")
+        injuryTableType = 4
+    }
+    
     @IBOutlet weak var nameLabel: UITextField!
     
     @IBOutlet weak var display: UILabel!
@@ -87,6 +109,7 @@ Please choose a number from 1 to 13!
     var resultInt = Int()
     var userIsInTheMiddleOfTyping = false
     
+    var injuryTableType = Int()
     
     var table: Table? {
         didSet {
@@ -116,13 +139,17 @@ Please choose a number from 1 to 13!
             destinationVC.chosenEvent = brainEvents[resultInt]
         } else if segue.identifier == "ShowInjuryEventDetail" {
             let destinationVC = segue.destination as! InjuryEventDetailViewController
-            destinationVC.chosenEvent = injuryEvents[resultInt]
+            destinationVC.chosenEvent = injuryEvents[injuryTableType]
         }
     }
     
     func refreshUI() {
         loadViewIfNeeded()
-        nameLabel.text = table?.name
+        if table?.type == .injury {
+            nameLabel.text = ((table?.name)! + " - Head")
+        } else {
+            nameLabel.text = table?.name
+        }
         //descriptionLabel.text = table?.description
         //iconImageView.image = table?.icon
         //weaponImageView.image = table?.weaponImage
