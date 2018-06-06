@@ -36,6 +36,7 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let table = tables[indexPath.row]
         cell.textLabel?.text = table.name
+        cell.backgroundColor = UIColor.lightGray
         return cell
     }
 
