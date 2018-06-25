@@ -18,7 +18,7 @@
         <!--Detail View Controller-->
         <scene sceneID="fcK-tL-DyU">
             <objects>
-                <viewController storyboardIdentifier="ShowBrainEventDetail" id="t7r-fd-5D8" customClass="DetailViewController" customModule="Death_s_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowBrainEventDetail" id="t7r-fd-5D8" customClass="DetailViewController" customModule="KDMTables" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pzk-W7-6VX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,6 +292,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96997629839999999" blue="0.85531422430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Peb-7h-78z" firstAttribute="top" secondItem="rNe-7y-kAV" secondAttribute="bottom" constant="20" id="GVA-N8-fMA"/>
                             <constraint firstItem="rNe-7y-kAV" firstAttribute="centerX" secondItem="Pzk-W7-6VX" secondAttribute="centerX" id="WnW-s0-9Zr"/>
@@ -327,7 +328,7 @@
         <!--Hunt Event Detail View Controller-->
         <scene sceneID="Lm2-cd-Xy4">
             <objects>
-                <viewController id="9xI-og-VNg" customClass="HuntEventDetailViewController" customModule="Death_s_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9xI-og-VNg" customClass="HuntEventDetailViewController" customModule="KDMTables" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPa-Rj-br3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,7 +387,7 @@
         <!--Master View  Controller-->
         <scene sceneID="l4q-Qy-vwX">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="w00-Ng-Uuy" customClass="MasterViewController" customModule="Death_s_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="w00-Ng-Uuy" customClass="MasterViewController" customModule="KDMTables" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H51-5W-sW0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,6 +432,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cy9-bK-bYq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="w00-Ng-Uuy" kind="relationship" relationship="rootViewController" id="nhx-Xf-RAI"/>
@@ -475,7 +477,7 @@
         <!--Brain Event Detail View Controller-->
         <scene sceneID="yrh-e6-tze">
             <objects>
-                <viewController id="EaQ-Uh-Amo" customClass="BrainEventDetailViewController" customModule="Death_s_Diary" sceneMemberID="viewController">
+                <viewController id="EaQ-Uh-Amo" customClass="BrainEventDetailViewController" customModule="KDMTables" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0u-CF-9jE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -534,7 +536,7 @@
         <!--Injury Event Detail View Controller-->
         <scene sceneID="2bC-6B-t2j">
             <objects>
-                <viewController id="nRG-lh-SS6" customClass="InjuryEventDetailViewController" customModule="Death_s_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nRG-lh-SS6" customClass="InjuryEventDetailViewController" customModule="KDMTables" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doV-9h-zC1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

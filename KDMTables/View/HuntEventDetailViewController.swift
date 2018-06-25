@@ -1,6 +1,6 @@
 //
 //  HuntEventDetailViewController.swift
-//  Death's Diary
+//  KDMTables
 //
 //  Created by Greg Durrett on 5/10/18.
 //  Copyright © 2018 AppHazard Productions. All rights reserved.

@@ -34,7 +34,7 @@
 		FB93DFC320C5C58F00CAA684 /* InjuryEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryEvent.swift; sourceTree = "<group>"; };
 		FB93DFC520C5C77E00CAA684 /* InjuryEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryEventDetailViewController.swift; sourceTree = "<group>"; };
 		FB93DFC720C5EEAA00CAA684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
-		FBB4D91F20A23C7E00CAA684 /* Death's Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Death's Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB4D91F20A23C7E00CAA684 /* KDMTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KDMTables.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4D92220A23C7E00CAA684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB4D92720A23C7E00CAA684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBB4D92C20A23C7F00CAA684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		FBB4D91620A23C7E00CAA684 = {
 			isa = PBXGroup;
 			children = (
-				FBB4D92120A23C7E00CAA684 /* Death's Diary */,
+				FBB4D92120A23C7E00CAA684 /* KDMTables */,
 				FBB4D92020A23C7E00CAA684 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,12 +92,12 @@
 		FBB4D92020A23C7E00CAA684 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBB4D91F20A23C7E00CAA684 /* Death's Diary.app */,
+				FBB4D91F20A23C7E00CAA684 /* KDMTables.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBB4D92120A23C7E00CAA684 /* Death's Diary */ = {
+		FBB4D92120A23C7E00CAA684 /* KDMTables */ = {
 			isa = PBXGroup;
 			children = (
 				FB7445D920C4A77D00CAA684 /* View */,
@@ -106,7 +106,7 @@
 				FBB4D92B20A23C7F00CAA684 /* LaunchScreen.storyboard */,
 				FBB4D92E20A23C7F00CAA684 /* Info.plist */,
 			);
-			path = "Death's Diary";
+			path = "KDMTables";
 			sourceTree = "<group>";
 		};
 		FBDFE60D20B4C09B00CAA684 /* TableViewCells */ = {
@@ -145,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBB4D91E20A23C7E00CAA684 /* Death's Diary */ = {
+		FBB4D91E20A23C7E00CAA684 /* KDMTables */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBB4D93120A23C7F00CAA684 /* Build configuration list for PBXNativeTarget "Death's Diary" */;
+			buildConfigurationList = FBB4D93120A23C7F00CAA684 /* Build configuration list for PBXNativeTarget "KDMTables" */;
 			buildPhases = (
 				FBB4D91B20A23C7E00CAA684 /* Sources */,
 				FBB4D91C20A23C7E00CAA684 /* Frameworks */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = "Death's Diary";
-			productName = "Death's Diary";
-			productReference = FBB4D91F20A23C7E00CAA684 /* Death's Diary.app */;
+			name = "KDMTables";
+			productName = "KDMTables";
+			productReference = FBB4D91F20A23C7E00CAA684 /* KDMTables.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FBB4D91A20A23C7E00CAA684 /* Build configuration list for PBXProject "Death's Diary" */;
+			buildConfigurationList = FBB4D91A20A23C7E00CAA684 /* Build configuration list for PBXProject "KDMTables" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBB4D91E20A23C7E00CAA684 /* Death's Diary */,
+				FBB4D91E20A23C7E00CAA684 /* KDMTables */,
 			);
 		};
 /* End PBXProject section */
@@ -374,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BER336RBH2;
-				INFOPLIST_FILE = "Death's Diary/Info.plist";
+				INFOPLIST_FILE = "KDMTables/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BER336RBH2;
-				INFOPLIST_FILE = "Death's Diary/Info.plist";
+				INFOPLIST_FILE = "KDMTables/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBB4D91A20A23C7E00CAA684 /* Build configuration list for PBXProject "Death's Diary" */ = {
+		FBB4D91A20A23C7E00CAA684 /* Build configuration list for PBXProject "KDMTables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBB4D92F20A23C7F00CAA684 /* Debug */,
@@ -416,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBB4D93120A23C7F00CAA684 /* Build configuration list for PBXNativeTarget "Death's Diary" */ = {
+		FBB4D93120A23C7F00CAA684 /* Build configuration list for PBXNativeTarget "KDMTables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FBB4D93220A23C7F00CAA684 /* Debug */,
